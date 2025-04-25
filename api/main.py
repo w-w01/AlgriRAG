@@ -28,6 +28,7 @@ blob_service = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONN_STR)
 container_client = blob_service.get_container_client(BLOB_CONTAINER)
 
 def download_blob_to_local(blob_name, local_path):
+    os.makedirs(os.path.dirname(local_path), exist_ok=True)
     blob_client = container_client.get_blob_client(blob=blob_name)
     with open(local_path, "wb") as f:
         data = blob_client.download_blob()

@@ -1,2 +1,4 @@
 /python3.10
 .env
+faiss_index/crop_structured_docs.json
+faiss_index/crop_structured_index.faiss
