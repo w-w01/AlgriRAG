@@ -1,0 +1,86 @@
+[
+  {
+    "crop": "pepper",
+    "disease": "Bacterial Spot",
+    "symptom": "Small, water-soaked spots appear on pepper leaves and fruits. These spots turn brown or black and may develop yellow halos. Severe infections cause leaf drop and fruit blemishes.",
+    "cause": "Caused by Xanthomonas campestris pv. vesicatoria. It spreads through wind-driven rain, irrigation splash, contaminated tools, and infected seeds, especially under warm, wet conditions.",
+    "treatment": "Use certified disease-free seeds, avoid overhead watering, and apply copper-based bactericides weekly. Remove and destroy infected plants. Practice crop rotation and sanitize tools."
+  },
+  {
+    "crop": "potato",
+    "disease": "Early Blight",
+    "symptom": "Dark brown spots with concentric rings (target-like appearance) appear on older potato leaves. These spots may enlarge and cause leaf yellowing and premature defoliation.",
+    "cause": "Caused by the fungus Alternaria solani, which survives in soil, plant debris, and infected seed tubers. It thrives in warm, humid environments and can be spread by wind and water.",
+    "treatment": "Use certified disease-free seed tubers and resistant varieties. Apply fungicides such as mancozeb or azoxystrobin at the early sign of disease and practice crop rotation."
+  },
+  {
+    "crop": "potato",
+    "disease": "Late Blight",
+    "symptom": "Leaves develop large, dark, water-soaked lesions that expand rapidly under cool, wet conditions. White mold may appear on the undersides of infected leaves. Tubers show brown, granular rot.",
+    "cause": "Caused by the oomycete pathogen Phytophthora infestans. The disease spreads rapidly during periods of high humidity and rainfall, especially in poorly ventilated canopies.",
+    "treatment": "Apply preventive fungicides like chlorothalonil or metalaxyl before symptoms appear. Remove and destroy infected plants, ensure proper field drainage, and avoid overhead irrigation."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Bacterial Spot",
+    "symptom": "Small, water-soaked spots appear on leaves, which later enlarge and turn dark brown or black with yellow halos. Fruits may develop raised, scabby lesions that reduce marketability.",
+    "cause": "Caused by Xanthomonas species, commonly spread through splashing rain, overhead irrigation, contaminated tools, and infected seeds. Warm, humid conditions favor disease development.",
+    "treatment": "Use disease-free seeds, avoid working with wet plants, and apply copper-based bactericides regularly. Remove infected foliage and rotate crops to reduce inoculum levels."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Early Blight",
+    "symptom": "Older leaves develop dark brown to black lesions with concentric rings, forming a target-like pattern. Affected leaves often turn yellow and drop prematurely, starting from the bottom of the plant.",
+    "cause": "Caused by the fungus Alternaria solani, which overwinters in soil and plant debris. It thrives in warm, wet conditions and spreads via wind, rain splash, and mechanical means.",
+    "treatment": "Use resistant tomato varieties and remove infected leaves promptly. Apply fungicides like mancozeb or azoxystrobin at regular intervals and maintain good air circulation through proper spacing."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Late Blight",
+    "symptom": "Large, irregularly shaped, water-soaked lesions form on leaves, stems, and fruit. Lesions may appear greasy and rapidly expand during cool, moist weather. White mold may be seen on leaf undersides.",
+    "cause": "Caused by the oomycete pathogen Phytophthora infestans. The disease spreads quickly in cool, humid environments, especially with overhead irrigation or rain splash.",
+    "treatment": "Apply protective fungicides such as chlorothalonil or copper hydroxide before symptoms appear. Remove and destroy infected plants immediately, and avoid planting near potatoes."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Leaf Mold",
+    "symptom": "Pale yellow spots develop on the upper leaf surface, typically between veins. These spots enlarge and coalesce, while the undersides of leaves show olive-green to grayish mold growth.",
+    "cause": "Caused by the fungus Passalora fulva (formerly Fulvia fulva). The disease is favored by high humidity, poor ventilation, and prolonged leaf wetness, often in greenhouses or shaded fields.",
+    "treatment": "Improve air circulation, reduce humidity, and avoid overhead irrigation. Apply fungicides such as mancozeb or copper-based products at early signs of infection."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Septoria Leaf Spot",
+    "symptom": "Numerous small, circular spots with dark brown margins and grayish-white centers appear on older leaves, typically starting from the bottom of the plant. Infected leaves may yellow and drop prematurely.",
+    "cause": "Caused by the fungus Septoria lycopersici, which overwinters in plant debris and soil. The disease is spread by splashing water, tools, and workers, especially in wet, humid conditions.",
+    "treatment": "Remove infected leaves and debris. Avoid overhead watering and ensure proper plant spacing. Apply fungicides like chlorothalonil, mancozeb, or copper-based formulations as a preventative measure."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Spider Mites (Two-spotted)",
+    "symptom": "Leaves show yellow stippling and may appear bronzed or scorched as feeding intensifies. Fine webbing is often visible on the undersides of leaves, especially in dry, hot weather.",
+    "cause": "Caused by the two-spotted spider mite (Tetranychus urticae), which thrives in dusty, dry, and hot conditions. Populations can build rapidly in protected environments or under drought stress.",
+    "treatment": "Spray plants with a strong stream of water to dislodge mites. Use miticides such as abamectin or insecticidal soap. Introducing predatory mites can help biologically control outbreaks."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Target Spot",
+    "symptom": "Circular brown lesions with concentric rings appear on leaves, often surrounded by yellow halos. Lesions may coalesce, causing leaf blight and premature defoliation. Fruits can also be affected in severe cases.",
+    "cause": "Caused by the fungus Corynespora cassiicola. The disease is favored by warm, humid conditions and spreads via spores in wind, water splash, or contaminated tools.",
+    "treatment": "Apply fungicides such as chlorothalonil or strobilurins preventatively. Remove infected leaves and debris, improve air circulation, and avoid overhead irrigation."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Tomato Yellow Leaf Curl Virus",
+    "symptom": "Young leaves curl upward and turn yellow, often accompanied by stunted plant growth and reduced fruit size. Infected plants may exhibit a bushy appearance due to shortened internodes.",
+    "cause": "Caused by Tomato yellow leaf curl virus (TYLCV), which is transmitted by the silverleaf whitefly (Bemisia tabaci). The virus spreads quickly in hot, dry conditions and infected plants serve as reservoirs.",
+    "treatment": "Control whiteflies with reflective mulches, insecticidal soaps, and yellow sticky traps. Remove infected plants early to limit spread. Use TYLCV-resistant tomato varieties where available."
+  },
+  {
+    "crop": "tomato",
+    "disease": "Tomato Mosaic Virus",
+    "symptom": "Leaves display a mottled pattern with alternating dark and light green areas. Leaflets may be fern-like or distorted, and fruits may show uneven ripening or internal browning.",
+    "cause": "Caused by Tomato mosaic virus (ToMV), which is mechanically transmitted through contaminated hands, tools, seeds, or infected plant material. The virus is highly stable and can persist on surfaces.",
+    "treatment": "Use virus-free seeds and resistant varieties. Disinfect tools and avoid handling plants after using tobacco products. Remove and destroy infected plants to prevent further spread."
+  }
+]
