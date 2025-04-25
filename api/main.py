@@ -6,6 +6,8 @@ from sentence_transformers import SentenceTransformer
 import os
 from azure.storage.blob import BlobServiceClient
 from openai import AzureOpenAI
+from dotenv import load_dotenv
+load_dotenv()  
 
 required_envs = [
     "AZURE_STORAGE_CONNECTION_STRING", "AZURE_STORAGE_CONTAINER_NAME",

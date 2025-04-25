@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+faiss-cpu
+sentence-transformers
+requests
+azure-storage-blob
+openai
+python-dotenv
