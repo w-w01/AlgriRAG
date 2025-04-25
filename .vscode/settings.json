@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/26341a57-d092-4dd7-8542-4eec6680b286/resourceGroups/CropCare-RAG/providers/Microsoft.Web/sites/rag-demo",
+  "appService.deploySubpath": "."
+}
