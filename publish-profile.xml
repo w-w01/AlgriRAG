@@ -1,0 +1,3 @@
+REDACTED	https://portal.azure.com	None	https://rag-demo-fmh2h2gdcsckf0h7.australiasoutheast-01.azurewebsites.net		rag-demo		rag-demo - Web Deploy	MSDeploy	rag-demo-fmh2h2gdcsckf0h7.scm.australiasoutheast-01.azurewebsites.net:443	REDACTED	REDACTED	WebSites
+REDACTED	https://portal.azure.com	None	https://rag-demo-fmh2h2gdcsckf0h7.australiasoutheast-01.azurewebsites.net	True			rag-demo - FTP	FTP	ftps://waws-prod-ml1-031.ftp.azurewebsites.windows.net/site/wwwroot	REDACTED	REDACTED	WebSites
+REDACTED	https://portal.azure.com	None	https://rag-demo-fmh2h2gdcsckf0h7.australiasoutheast-01.azurewebsites.net			rag-demo - Zip Deploy	ZipDeploy	rag-demo-fmh2h2gdcsckf0h7.scm.australiasoutheast-01.azurewebsites.net:443	REDACTED	REDACTED	WebSites
