@@ -20,7 +20,7 @@ for var in required_envs:
     if var not in os.environ:
         raise EnvironmentError(f"Missing environment variable: {var}")
 
-# 环境变量中读取
+# read from env
 AZURE_STORAGE_CONN_STR = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
 BLOB_CONTAINER = os.environ["AZURE_STORAGE_CONTAINER_NAME"]
 BLOB_INDEX_FILE = os.environ["AZURE_BLOB_FAISS_INDEX"]
@@ -36,7 +36,7 @@ def download_blob_to_local(blob_name, local_path):
         data = blob_client.download_blob()
         f.write(data.readall())
 
-# === 配置 ===#
+# === Config ===#
 client = AzureOpenAI(
     api_key=os.environ["AZURE_OPENAI_KEY"],
     api_version=os.environ["AZURE_OPENAI_API_VERSION"],
@@ -46,7 +46,7 @@ client = AzureOpenAI(
 DEPLOYMENT = os.environ["AZURE_OPENAI_DEPLOYMENT"]
 TOKEN_LIMIT = int(os.environ.get("AZURE_OPENAI_TOKEN_LIMIT", "120000"))
 
-# === 加载模型与数据 ===
+# === Load Model and Data ===
 LOCAL_INDEX_PATH = "faiss_index/crop_structured_index.faiss"
 LOCAL_DOC_PATH = "faiss_index/crop_structured_docs.json"
 
@@ -63,7 +63,7 @@ with open(LOCAL_DOC_PATH, "r", encoding="utf-8") as f:
 model = SentenceTransformer("all-MiniLM-L6-v2")
 app = FastAPI()
 
-# === 请求模型 ===
+# === Request Model ===
 class LabelQuery(BaseModel):
     label: str  # e.g. Tomato___Late_blight
 
@@ -71,7 +71,7 @@ class TextQuery(BaseModel):
     crop: str   # e.g. tomato
     symptom: str  # e.g. Leaves turn yellow with small dark spots
 
-# === 查询构造工具 ===
+# === Query Construct Tool ===
 def search_faiss(query_text: str, crop: str = None, disease: str = None):
     vector = model.encode([query_text]).astype("float32")
     D, I = index.search(vector, k=6)
