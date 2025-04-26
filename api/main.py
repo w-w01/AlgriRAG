@@ -65,8 +65,7 @@ app = FastAPI()
 
 # === 请求模型 ===
 class LabelQuery(BaseModel):
-    crop: str  # e.g. Tomato
-    disease: str # e.g. Late_blight
+    label: str  # e.g. Tomato___Late_blight
 
 class TextQuery(BaseModel):
     crop: str   # e.g. tomato
@@ -95,15 +94,17 @@ def ping():
 
 @app.post("/rag/by-label")
 async def rag_by_label(query: LabelQuery):
-    query_text = f"{query.crop} - {query.disease}"
+    crop = query.label.split("___")[0]
+    disease = query.label.split("___")[1].replace("_", " ")
+    query_text = f"{crop} - {disease}"
 
-    retrieved = search_faiss(query_text, crop=query.crop, disease=query.disease)
+    retrieved = search_faiss(query_text, crop=crop, disease=disease)
     # to avoid exceeding token limit
     retrieved_doc = retrieved[0][:500]
     prompt = f"""
 You are an agricultural assistant helping farmers diagnose crop diseases.
 
-Identified disease: {query.disease} on {query.crop}.
+Identified disease: {disease} on {crop}.
 
 Relevant documents:
 - {retrieved_doc}
